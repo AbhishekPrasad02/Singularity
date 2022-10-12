@@ -21,46 +21,61 @@ body {
     z-index: 100;
 }
 .hero{
-    height: 10;
-    width: 100%;
     color: rgb(255, 255, 255);
     background-color: black;
-    padding-left: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-nav{
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: space-between;
-    
 }
-nav ul li{
+
+.brandl{
+   font-size: 1.5rem;
+   margin: o.5rem; 
+}
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;    
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+}
+/* .navbar-links ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-weight: bolder;
-    padding-right: 60px;
+    padding-right: 40px;
 }
 
 nav ul li a{
     color: white;
     text-decoration: none;
-    border: 1px solid #ffffff;
-    padding: 5px;
+    padding: 3px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-}
+} */
 
- /* nav ul li a:hover{
-    box-shadow: 0 5px 50px 0 #ffffff inset,0 5px 50px 0 #ffffff,
+ .navbar-links li a:hover{
+     box-shadow: 0 5px 50px 0 #ffffff inset,0 5px 50px 0 #ffffff,
                 0 5px 50px 0 #ffffff inset,0 5px 50px 0 #ffffff ;
-    text-shadow: 0 5px 50px 0 #ffffff, 0 5px 50px 0 #ffffff  ;
-    background-color: white;
-    padding: 5px;
+    text-shadow: 0 5px 50px 0 #ffffff, 0 5px 50px 0 #ffffff  ; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
     color: black;
-    border: 20px;
-    border-radius: 15px;} */
+    padding: 1rem;
+    margin: 0.4rem;
+    /* padding: 1rem; */
+    /* color: black;
+    border: 1px;
+    border-radius: 15px;} */}
 
     .toggle-button {
         position: absolute;
@@ -111,9 +126,8 @@ section:nth-child(1) img{
 }
 section:nth-child(2 ){
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    overflow: auto;  
-    font-size: 60px; 
+    color: rgb(255, 255, 255); 
+    font-size: 35px; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -127,9 +141,26 @@ section:nth-child(2 ) h1 p{
 section:nth-child(3){
     background-image: url(pexels-brett-sayles-3114462.jpg);
 	min-height: 100vh;
-    overflow: auto;
     padding: 100px 15px;
+    overflow:auto;
 }
+
+section:nth-child(3) button{
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 5px;
+    border: #ffffff 2px;
+    padding: 4px;
+    border-style: solid;
+}
+
+section:nth-child(3) button:hover{
+    background-color: rgb(255, 251, 251);
+    color: #000000;
+    border-radius: 5px;
+    border: #ffffff 2px;
+    padding: 4px;
+    border-style: solid;}
 
 .timeline-items h1{
     color: #ffffff;
@@ -211,9 +242,21 @@ section:nth-child(3){
 	margin:6px 0 15px;
 }
 @media(max-width: 689px){
-    nav ul{
-        display: none;
+    /* nav{
+        display: block;
     }
+    nav ul{
+        flex-direction: column;
+    } */
+    /* nav ul{
+        position: fixed;
+        top: 40px;
+        left: 0px;
+        height: 100vh;
+        width: 100%;
+        background-color: #000;
+        display: block;
+    }  */
     .timeline-items::before{
 		left: 7px;
         right: 20px;
@@ -249,37 +292,47 @@ section:nth-child(3){
         width: 100%;
         height: 100%;
      }
-     .navbar {
+
+     /* .navbar-links li a:hover{
+display: none;} */
+     /* .navbar-links ul {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
+        align-items: center; */
+    
+    /* nav ul {
+        width: 100%;
+        flex-direction: column;
+    } */
+    /* .toggle-button {
         display: flex;
-    }
+    }  */
+/*
+     .toggle-button {
+        display: flex;
+    } 
 
-    .navbar-links {
+    nav {
         display: none;
         width: 100%;
     }
 
-    .navbar-links ul {
+    nav ul {
         width: 100%;
         flex-direction: column;
     }
 
-    .navbar-links ul li {
+    nav ul li {
         text-align: center;
     }
 
-    .navbar-links ul li a {
+    nav ul li a {
         padding: .5rem 1rem;
     }
 
-    .navbar-links.active {
+    nav.active {
         display: flex;
-    }
-	section:nth-child(1){
+    } */
+	/* section:nth-child(1){
         justify-content: center;
         align-items: center;
         background-color:black;
@@ -287,5 +340,13 @@ section:nth-child(3){
         font-size:10px;
         border: 0px;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;}
+        font-weight: bolder;} */
+        /* #preloader{
+            background: #000 url(pl3.gif) no-repeat center center;
+            background-size: 30%;
+            height: 1000px;
+            width: auto;
+            position: fixed;
+            z-index: 100;
+        } */
 }
