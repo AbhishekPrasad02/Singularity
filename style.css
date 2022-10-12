@@ -393,10 +393,12 @@ display: none;} */
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         #preloader img{
-            height: 180px;
-            width: 380px;
+            display: inline;
+            height: 170px;
+            width: 320px;
             padding-top: 80%;
-            padding-left:-20%;
+            margin-left: -20px;
+            
         
         }
         .section:nth-child(3){
