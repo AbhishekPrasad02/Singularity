@@ -66,7 +66,9 @@ nav ul li a{
     cursor: pointer;
     transition: 1s;
 } */
-
+.hero{
+    position: sticky;
+}
  .navbar-links li a:hover{
      box-shadow: 0 5px 50px 0 #ffffff inset,0 5px 50px 0 #ffffff,
                 0 5px 50px 0 #ffffff inset,0 5px 50px 0 #ffffff ;
@@ -164,7 +166,8 @@ section:nth-child(3) button:hover{
     border-radius: 5px;
     border: #ffffff 2px;
     padding: 4px;
-    border-style: solid;}
+    border-style: solid;
+    overflow: hidden;}
 
 .timeline-items h1{
     color: #ffffff;
@@ -357,8 +360,24 @@ display: none;} */
             background: #000 url(pl3.gif) no-repeat center center;
             background-size: 50%;
             height: 100vh;
-            width: 100%;
+            width: 100vh;
             position: fixed;
             z-index: 100;
+        }
+        .container h3{
+          font-size: small;
+        }
+        .container section img{
+            height: 100%;
+            width: 100%;
+        }
+        .navbar-links ul li{
+            padding: 3px;
+            font-size: 13px;
+            margin: -4px;
+        }
+        .brandl img{
+            margin: -17px;
+            padding-left: 20px;
         }
 }
