@@ -54,7 +54,7 @@ html,body {
     text-decoration: none;
     color: #ffffff;
     padding: 1rem;
-    display: block;
+    display: flex;
 }
 /* .navbar-links ul li{
     list-style-type: none;
