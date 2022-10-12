@@ -362,18 +362,7 @@ display: none;} */
             position: fixed;
             z-index: 100;
         } */
-        #preloader{
-            background: #000 url(pl3.gif) no-repeat center center;
-            background-size: 100%;
-            height: 200px;
-            width: 200px;
-            position: absolute;
-            margin-top: 80%;
-            margin-left: 20%;
-            z-index: 100;
-            align-content: center;
-            justify-content: center;
-        }
+        
         .container h3{
           font-size: small;
         }
@@ -392,7 +381,19 @@ display: none;} */
             height: 50px;
             width: 45px;
         }
-        .container section:nth-child(2){
-
+        .container section:nth-child(2) img{
+            height: 50%;
+            width: 50%;
+        }
+        .container section:nth-child(2) p{
+                font-size: medium;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #preloader img{
+            height: 180px;
+            width: 380px;
+            padding-top: 80%;
+            padding-left:-20%;
+        
         }
 }
