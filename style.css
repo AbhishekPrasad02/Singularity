@@ -26,9 +26,6 @@ html,body {
     position: fixed;
     z-index: 100;
 }
-#preloader img{
-    display: none;
-}
 .navbar-links ul li img{
     padding:0;
     margin-top: -6px;
@@ -391,15 +388,6 @@ display: none;} */
         .container section:nth-child(2) p{
                 font-size: medium;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        #preloader img{
-            display: inline;
-            height: 170px;
-            width: 320px;
-            padding-top: 80%;
-            margin-left: -10px;
-            
-        
         }
         .section:nth-child(3){
             overflow: auto;
