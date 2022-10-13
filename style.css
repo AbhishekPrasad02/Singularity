@@ -12,6 +12,14 @@
   ::-webkit-scrollbar{
     display: none;
 }
+#preloader{
+    background: #000 url(pl3.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
   
   .nav {
     height: 50px;
